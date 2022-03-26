@@ -21,9 +21,27 @@ Desenvolvido por Harold H. Seward no MIT em 1954, o Radix Sort é um método de 
 2. Most Significant Digit - MSD
 
 <p align="justify">
-Embora pensando a princípio para ordenar cartões perfurados e posteriormente adotado para ordenar números inteiros, o Radix Sort não se limita a essas operações. Seu modelo operacional permite que quaisquer conjuntos possam ser colocados em ordem lexicográfica sem maiores modificações em seu modo de execução. A idéia por trás desse método é observar os elementos do conjunto a partir de seus dígitos, ordenando-os sucessivamente do menor para o maior ( LSD ) ou do maior para o menor dígito encontrado ( MSD ). Vejamos a seguir uma sequência de passos para ordenar o conjunto de entrada <img src="https://render.githubusercontent.com/render/math?math=\Big\{123, 142, 087, 263, 233, 014, 132 \Big\}">. 
+Embora pensando a princípio para ordenar cartões perfurados e posteriormente adotado para ordenar números inteiros, o Radix Sort não se limita a essas operações. Seu modelo operacional permite que quaisquer conjuntos possam ser colocados em ordem lexicográfica sem maiores modificações em seu modo de execução. A idéia por trás desse método é observar os elementos do conjunto a partir de seus dígitos, ordenando-os sucessivamente do menor para o maior ( LSD ) ou do maior para o menor dígito encontrado ( MSD ). Vejamos a seguir uma sequência de passos para ordenar o conjunto de entrada {123, 142, 087, 263, 233, 014, 132}, bem como, o pseudo algoritmo utilizado pelo Radix Sort. 
 </p>
 
 <p align="center">
 	<img src="imgs/example.png"/> 
 </p> 
+
+<p align="justify">
+Um simulador do Radix Sort com um conjunto maior de entradas pode ser observado [vide site](https://www.cs.usfca.edu/~galles/visualization/RadixSort.html). 
+</p>
+
+<p align="justify">
+Note que, no modelo de pseudo algoritmo apresentado como parte da figura acima não há recursão e comparações entre elementos do conjunto. A ausência de recursão reduz a necessidade de espaço em memória, o que torna o Radix Sort uma boa opção para grandes conjuntos de dados. Além disso esse método de ordenação é considerado um método estável. Como desvantagens, tem-se a dificuldade, em alguns casos, de se otimizar a função getDigit e o método em questão não é considerado boa opção se o número de digitos é grande. 
+</p>
+
+<div align="justify">
+
+> Quanto aos custos computacionais, podemos observar:
+>
+> - O custo para verificação dos dígitos é de 2 * N  * ndigits.
+> - O custo para trocas é de N * ndigits
+> - Se ndigits for pequeno e/ou constante, o método apresenta custo linear, ou seja, <img src="https://render.githubusercontent.com/render/math?math=\mathcal{O}(n)">.
+
+</div>
