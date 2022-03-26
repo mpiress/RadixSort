@@ -45,3 +45,38 @@ Note que, no modelo de pseudo algoritmo apresentado como parte da figura acima n
 > - Se ndigits for pequeno e/ou constante, o método apresenta custo linear, ou seja, <img src="https://render.githubusercontent.com/render/math?math=\mathcal{O}(n)">.
 
 </div>
+
+<p align="justify">
+Em literatura é possível encontrar estudos apontando que o número máximo de dígitos tratados deve ser 10. Valores acima disso podem gerar depreciação na execução e tempo de resposta. Além disso, em termos gerais o custo total do Radix Sort para ordenar um conjunto de N elementos de entrada é apresentada como <img src="https://render.githubusercontent.com/render/math?math=\mathcal{O}(n\log{}n)">. 
+</p>
+
+# Compilação e Execução
+
+O método Radix Sort disponibilizado possui um arquivo Makefile que realiza todo o procedimento de compilação e execução. Para tanto, temos as seguintes diretrizes de execução:
+
+<div align="center">
+
+| Comando                |  Função                                                                                           |
+| -----------------------| ------------------------------------------------------------------------------------------------- |
+|  `make clean`          | Apaga a última compilação realizada contida na pasta build                                        |
+|  `make`                | Executa a compilação do programa utilizando o gcc, e o resultado vai para a pasta build           |
+|  `make run`            | Executa o programa da pasta build após a realização da compilação                                 |
+
+</div>
+
+# Contatos
+
+<div style="display: inline-block;">
+<a href="https://t.me/michelpires369">
+<img align="center" height="20px" width="90px" src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white"/> 
+</a>
+
+<a href="https://www.linkedin.com/in/michelpiressilva/">
+<img align="center" height="20px" width="90px" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
+</a>
+
+</div>
+
+<a style="color:black" href="mailto:michel@cefetmg.br?subject=[GitHub]%20Source%20Dynamic%20Lists">
+✉️ <i>michel@cefetmg.br</i>
+</a>
